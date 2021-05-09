@@ -1838,8 +1838,25 @@ a#cancel-comment-reply-link:hover {
 	color: var(--text-important);
 }
 
+.comment.bypostauthor .comment-body {
+    border-color: var(--text-optional);
+    border-width: 2px;
+}
 
-
+.comment.bypostauthor::before {
+    background-color: var(--text-optional);
+    border: 1px solid var(--text-optional-hover);
+    border-radius: calc( var(--radius) / 2);
+    color: var(--page-color);
+    content: "\2713";
+    display: block;
+    font-weight: 900;
+    line-height: 1rem;
+    padding: .25rem .3rem;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
 
 .comment-awaiting-moderation {
 	position: absolute;
